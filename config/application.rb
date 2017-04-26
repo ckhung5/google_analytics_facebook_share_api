@@ -24,6 +24,7 @@ module BandApp
     
     config.assets.enabled = true
     config.active_record.raise_in_transactional_callbacks = true
-    config.assets.paths << Rails.root.join("app", "assets", "image-backup","demo-img")
+    config.assets.paths << Rails.root.join("app", "assets", "images","demo-img")
+    config.assets.paths << Rails.root.join("app", "assets", "images")
   end
 end
