@@ -41,6 +41,13 @@ of those sections to manage the look and feel of the site. */
     background-position: 50% 50%;
 }
 
+.intro-section h1{
+ color: white;
+}
+.intro-section p{
+    color: white;
+}
+
 .intro-section .lead{
     font-weight:700;
     color: #fff;
