@@ -53,3 +53,6 @@ group :production do
   gem 'redis'
   gem "skylight"
 end
+
+# facebook share
+gem 'social-share-button', '~> 0.1.6'

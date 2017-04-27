@@ -6,16 +6,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Lyrics For You">
     <meta name="author" content="Upperoom United">
     <meta name="keywords" content="lyrics,God,Jesus,Upperoom United">
-
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-
-      <link href="assets/bootstrap.min.css" rel="stylesheet" type="text/css">
-      <link href="assets/animate.css" rel="stylesheet">
-      <link href="assets/lyrics.css" rel="stylesheet" type="text/css">
-      <link href="assets/scrolling-nav.css" rel="stylesheet" type="text/css">
+    <meta property="og:url"           content="http://upperoom-united.herokuapp.com" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Upperoom United" />
+    <meta property="og:description"   content="Sing to the Lord" />
+    <meta property="og:image"         content="" />
+      <link href="/assets/bootstrap.min.css" rel="stylesheet" type="text/css">
+      <link href="/assets/animate.css" rel="stylesheet">
+      <link href="/assets/lyrics.css" rel="stylesheet" type="text/css">
+      <link href="/assets/scrolling-nav.css" rel="stylesheet" type="text/css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -29,7 +32,14 @@
 <!--   <%= csrf_meta_tags %> -->
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <%= yield %>
 
 </body>
