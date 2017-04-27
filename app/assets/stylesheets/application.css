@@ -14,3 +14,12 @@
  *= require social-share-button
  *= require_self
  */
+
+
+.social-share-button {
+  .ssb-icon {
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+  }
+}
