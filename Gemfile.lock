@@ -125,6 +125,8 @@ GEM
       rdoc (~> 4.0)
     skylight (1.2.1)
       activesupport (>= 3.0.0)
+      coffee-rails
+      sass-rails
     social-share-button (0.1.10)
       coffee-rails
       sass-rails
