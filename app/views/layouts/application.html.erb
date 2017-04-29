@@ -32,14 +32,15 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application'%>
 <!--   <%= csrf_meta_tags %> -->
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" >
+  <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
 <script>
-  window.fbAsyncInit = function() {
+    window.fbAsyncInit = function() {
     FB.init({
       appId      : '1500077860062275',
       xfbml      : true,
@@ -47,15 +48,22 @@
     });
     FB.AppEvents.logPageView();
   };
+     (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+     window.fbAsyncInit = function(){  // this gets triggered when FB object gets initialized
+            console.log("FB Object initiated");
+            FB.XFBML.parse(); // now we can safely call parse method
+       };
+
+
 </script>
+
 <%= yield %>
 
 
