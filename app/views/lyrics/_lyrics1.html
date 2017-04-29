@@ -95,7 +95,17 @@
                                 <%= social_share_button_tag("LOLO", :url => "https://upperoom-united.herokuapp.com/lyrics/show.html?lyrics=lyrics1", :image => "https://www.google.com.au/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwigkYfL8sTTAhWCipQKHRXIBqMQjRwIBw&url=http%3A%2F%2Fwww.lovethispic.com%2Fimage%2F11842%2Flet-it-be&psig=AFQjCNFRXePHINQuaa9w2OQOqZuCYnMRVw&ust=1493391381545133", desc: "The summary of page") %>
                                 <%= social_share_button_tag("Song title",'data-facebook-title' => 'Song1',desc: "The summary of page", :url => "https://upperoom-united.herokuapp.com/lyrics/show.html?lyrics=lyrics1") %>
                                 <%= link_to "https://www.facebook.com/sharer/sharer.php?u=https%3A//upperoom-united.herokuapp.com/lyrics/show.html?lyrics=lyrics1", target: :blank %>
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//upperoom-united.herokuapp.com/lyrics/show.html?lyrics=lyrics1">Share on Facebook</a> -->                                                                
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//upperoom-united.herokuapp.com/lyrics/show.html?lyrics=lyrics1">Share on Facebook</a> -->
+
+                                <%= link_to('Share on Facebook', 'https://www.facebook.com/dialog/share?
+                                  app_id=1500077860062275
+                                  link=https://upperoom-united.herokuapp.com/&
+                                  picture=http://fbrell.com/f8.jpg&
+                                  name=Facebook%20Dialogs&
+                                  caption=Reference%20Documentation&
+                                  description=Using%20Dialogs%20to%20interact%20with%20users.&
+                                  redirect_uri=https://upperoom-united.herokuapp.com/',
+                                  :target => :blank) %>                                                               
                         </div><!--post entry-->
                         <div>
                             
