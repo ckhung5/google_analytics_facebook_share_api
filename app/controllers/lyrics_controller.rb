@@ -3,7 +3,7 @@ class LyricsController < ApplicationController
   	if params[:lyrics].present?
   	@lyrics = "lyrics/" + params[:lyrics]
   	@metatitle = params[:lyrics].capitalize
-  	@metaurl = "https://upperoom-united.herokuapp.com/show.html?lyrics="+ params[:lyrics]
+  	@metaurl = "https://upperoom-united.herokuapp.com/lyrics/show.html?lyrics="+ params[:lyrics]
 
 
   	if params[:lyrics] == "lyrics1"
